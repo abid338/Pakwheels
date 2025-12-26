@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Details - PakWheels</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fs-3 fw-bold"
+          href="index.html"
+        >
+          <div
+            class="logo rounded-circle d-flex align-items-center justify-content-center fs-4"
+          >
+            <i class="fas fa-car"></i>
+          </div>
+          PakWheels
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- VEHICLE DETAILS SECTION -->
+    <div class="py-5">
+      <div class="container">
+        <div id="vehicle-details">
+          <!-- Details will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">PakWheels</h5>
+            <p class="text-white-50">
+              Pakistan's #1 platform for buying and selling vehicles. Find your
+              dream car or bike today!
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#about" class="text-white-50 text-decoration-none">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-white-50 text-decoration-none">Contact</a>
+              </li>
+              <li class="mb-2">
+                <a href="#privacy" class="text-white-50 text-decoration-none">Privacy Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#terms" class="text-white-50 text-decoration-none">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Follow Us</h5>
+            <div class="social-links d-flex gap-2">
+              <a href="#" class="text-white text-decoration-none rounded-circle">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white text-decoration-none rounded-circle">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white text-decoration-none rounded-circle">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white text-decoration-none rounded-circle">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="text-white text-decoration-none rounded-circle">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 bg-white opacity-25" />
+        <div class="text-center text-white-50">
+          <p class="mb-0">&copy; 2025 PakWheels. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="details.js"></script>
+  </body>
+</html>
