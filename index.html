@@ -15,34 +15,8 @@
     />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
-      <div class="container">
-        <a
-          class="navbar-brand d-flex align-items-center gap-2 fs-3 fw-bold"
-          href="#"
-        >
-          <div
-            class="logo rounded-circle d-flex align-items-center justify-content-center fs-4"
-          >
-            <i class="fas fa-car"></i>
-          </div>
-          PakWheels
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" id="navbar-menu">
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- NAVBAR CONTAINER-->
+    <div id="navbar-container"></div>
     <!-- HERO SECTION -->
     <div class="hero-section text-white text-center py-5">
       <div class="container py-4">
@@ -59,6 +33,7 @@
                     <input
                       type="text"
                       class="form-control form-control-lg border-0 h-100"
+                      id="hero-keyword"
                       placeholder="Car Make or Model"
                     />
                   </div>
@@ -67,6 +42,7 @@
                       class="form-select form-select-lg border-0 h-100"
                       id="city-select"
                     >
+                      <!-- rendered by data.js -->
                     </select>
                   </div>
                   <div class="col-lg-3">
@@ -74,13 +50,14 @@
                       class="form-select form-select-lg border-0 h-100"
                       id="price-select"
                     >
+                      <!-- rendered by data.js -->
                     </select>
                   </div>
                   <div class="col-lg-2">
                     <button
                       class="btn search-btn text-white w-100 h-100 fw-bold fs-5 border-0"
                     >
-                    <i class="fas fa-search"></i>
+                      <i class="fas fa-search"></i>
                     </button>
                   </div>
                 </div>
@@ -93,37 +70,14 @@
     <!-- VEHICLES SECTIONS -->
     <div class="py-5">
       <div class="container" id="vehicles-container">
+        <!-- rendered by script.js -->
       </div>
     </div>
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white py-5 mt-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <h5 class="fw-bold mb-3">PakWheels</h5>
-            <p class="text-white-50">
-              Pakistan's #1 platform for buying and selling vehicles. Find your
-              dream car or bike today!
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h5 class="fw-bold mb-3">Quick Links</h5>
-            <ul class="list-unstyled" id="footer-links">
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <h5 class="fw-bold mb-3">Follow Us</h5>
-            <div class="social-links d-flex gap-2" id="social-links">
-            </div>
-          </div>
-        </div>
-        <hr class="my-4 bg-white opacity-25" />
-        <div class="text-center text-white-50">
-          <p class="mb-0">&copy; 2025 PakWheels. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER CONTAINER -->
+    <div id="footer-container"></div>
+    <!-- FLOATING WHATSP BUTTON-->
+    <div id="floating-whatsapp"></div>
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
